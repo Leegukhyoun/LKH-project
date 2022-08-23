@@ -174,3 +174,63 @@ img{
     justify-content: space-around;
     background: rgb(246,248,250);
 }
+@media screen and (max-width:750px){
+    .Page{
+        display: block;
+        position: relative;
+        img{
+            height: 100%;
+            transform: translateX(-40%);
+        }
+    }
+    .Page .frontTitle{
+        position: absolute;
+        top: 0;
+        left: 0;
+        color: #eee;
+        text-align: center;
+        padding: 0;
+        width: 100%;
+        padding-top: 460px;
+    }
+    .Page .frontTitle h1{
+        font-size: 60px;
+        width: 100%;
+    }
+    .Page .frontTitle span{
+        font-size: 30px;
+    }
+    .Page .frontTitle p{
+        font-size: 30px;
+    }
+    .divider{
+        display: none;
+    }
+    #P2cover{
+        padding-top: 70px;
+        flex-direction: column;
+    }
+    #P3cover{
+        padding-top: 70px;
+    }
+    .Page .info .infoContents{
+        padding: 10px;
+    }
+    .Page .info .infoContents p:first-child{
+        margin-bottom: 20px;
+    }
+    .Page .info .infoContents p{
+        &:last-child{
+            display: none;
+        }
+    }
+    .Page .info .btns{
+        margin-top: 20px;
+    }
+    .ppphoto{
+        display: none;
+    }
+    .Page .info .btns .visBtn{
+        margin-right: 20px;
+    }
+}
