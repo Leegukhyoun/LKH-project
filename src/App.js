@@ -87,15 +87,15 @@ function App() {
   }, []);
   return (
     <div ref={outerDivRef} className="outer">
-      <Fade cascade>
+      <Fade cascade duration={2000}>
         <Page1/>
       </Fade>
       <div className="divider"></div>
-      <Fade cascade>
+      <Fade cascade duration={2000} delay={500}>
         <Page2/>
       </Fade>
       <div className="divider"></div>
-      <Fade cascade>
+      <Fade cascade duration={2000} delay={500}>
         <Page3/>
       </Fade>
     </div>
