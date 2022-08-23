@@ -1,0 +1,176 @@
+@font-face {font-family: "Azonix"; src: url("//db.onlinewebfonts.com/t/50cd2aad9c8f35800bb6beac3ad42f16.eot"); src: url("//db.onlinewebfonts.com/t/50cd2aad9c8f35800bb6beac3ad42f16.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/50cd2aad9c8f35800bb6beac3ad42f16.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/50cd2aad9c8f35800bb6beac3ad42f16.woff") format("woff"), url("//db.onlinewebfonts.com/t/50cd2aad9c8f35800bb6beac3ad42f16.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/50cd2aad9c8f35800bb6beac3ad42f16.svg#Azonix") format("svg"); }
+@font-face {
+    font-family: 'GmarketSansMedium';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'HallymGothic-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2204@1.0/HallymGothic-Regular.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'SEBANG_Gothic_Bold';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2104@1.0/SEBANG_Gothic_Bold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+//@at-root
+
+body {
+    margin: 0;
+    overflow-y: hidden;
+  }
+  
+  .outer {
+    height: 100vh;
+    overflow-y: auto;
+  }
+  
+  /* 화면에서 스크롤바 안보이게 */
+  .outer::-webkit-scrollbar {
+    display: none;
+  }
+  
+  .inner {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 100px;
+  }
+  
+  .bg-yellow {
+    background-color: #f7f6cf;
+  }
+  
+  .bg-blue {
+    background-color: #b6d8f2;
+  }
+  
+  .bg-pink {
+    background-color: #f4cfdf;
+  }
+  
+  .divider {
+    width: 100%;
+    height: 5px;
+    background-color: gray;
+  }
+
+//
+
+img{
+    height: 100%;
+}
+.App{
+    color: #333;
+}
+.Page{
+    height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgb(246,248,250);
+    .frontImg{
+        height: 100%;
+    }
+    .frontTitle{
+        text-align: center;
+        padding-top: 20%;
+        padding-right: 5%;
+        font-family: 'Azonix';
+        h1{
+            font-size: 100px;
+        }
+        span{
+            font-size: 70px;
+        }
+        p{
+            margin-top: 30px;
+            font-size: 50px;
+        }
+    }
+    .info{
+        height: 600px;
+        font-family: 'HallymGothic-Regular';
+        .infoTitle{
+            display: flex;
+            align-items: flex-end;
+            height: 67px;
+            justify-content: center;
+            h2{
+                font-size: 50px;
+                color: #bbb;
+                height: 100%;
+            }
+            h3{
+                color: #000741;
+                margin-left: 10px;
+                padding-top: 20px;
+                font-size: 30px;
+                height: 100%;
+                font-family: 'SEBANG_Gothic_Bold';
+            }
+        }
+        .infoContents{
+            padding-left: 50px;
+            p{
+                margin-bottom: 10px;
+                &:first-child{
+                    margin-top: 50px;
+                    margin-bottom: 80px;
+                    font-size: 20px;
+                }
+            }
+        }
+        .btns{
+            margin-top: 100px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            .visBtn{
+                background: #aaa;
+                color: #eee;
+                padding: 6px 12px;
+                border-radius: 4px;
+                cursor: pointer;
+                transition: 0.5s;
+                &:hover{
+                    background: #000;
+                    color: #eee;
+                }
+            }
+            .gitBtn{
+                margin-left: 20px;
+                width: 50px;
+                height: 50px;
+                cursor: pointer;
+                transition: 0.5s;
+                opacity: 0.4;
+                &:hover{
+                    transform: scale(1.05);
+                    opacity: 1;
+                }
+                img{
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+        }
+    }
+}
+#P2cover{
+    justify-content: space-around;
+    background: #fff;
+}
+#P3cover{
+    justify-content: space-around;
+    background: rgb(246,248,250);
+}
