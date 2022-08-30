@@ -118,12 +118,13 @@ img{
         top: -10%;
         height: 600px;
         font-family: 'SUIT-Medium';
-        margin: 0 30px;
+        margin: 0 50px;
         .infoTitle{
             display: flex;
             align-items: flex-end;
             height: 67px;
             justify-content: center;
+            border-bottom: 3px solid #eee;
             h2{
                 font-size: 50px;
                 color: #bbb;
@@ -154,6 +155,8 @@ img{
             display: flex;
             justify-content: center;
             align-items: center;
+            border-top: 3px solid #eee;
+            padding-top: 10px;
             .visBtn{
                 background: #aaa;
                 color: #eee;
@@ -242,11 +245,23 @@ img{
         display: none;
     }
     #P2cover{
-        padding-top: 70px;
+        padding-top: 80px;
         flex-direction: column;
     }
     #P3cover{
-        padding-top: 70px;
+        padding-top: 80px;
+    }
+    #P4cover{
+        padding-top: 80px;
+    }
+    #P5cover{
+        padding-top: 80px;
+    }
+    #P6cover{
+        padding-top: 80px;
+    }
+    .Page .info{
+        height: 937px;
     }
     .Page .info .infoContents{
         padding: 10px;
@@ -267,5 +282,23 @@ img{
     }
     .Page .info .btns .visBtn{
         margin-right: 20px;
+    }
+    #P5cover{
+        .info{
+            .infoTitle{
+                h3{
+                    font-size: 20px;
+                }
+            }
+        }
+    }
+    #P6cover{
+        .info{
+            .infoTitle{
+                h3{
+                    font-size: 20px;
+                }
+            }
+        }
     }
 }
