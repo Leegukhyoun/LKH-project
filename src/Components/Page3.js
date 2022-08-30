@@ -2,10 +2,10 @@ import React from 'react';
 
 const Page3 = () => {
     const visitClick = () => {
-        window.open(`https://strato-client1.vercel.app/`, '_blank');
+        window.open(`https://strato-hotel.vercel.app/`, '_blank');
     }
     const gitClick = () => {
-        window.open(`https://github.com/Leegukhyoun/strato-client`, '_blank');
+        window.open(`https://github.com/Leegukhyoun/strato-hotel`, '_blank');
     }
     return (
 <div className='Page' id='P3cover'>
