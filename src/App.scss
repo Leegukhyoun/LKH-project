@@ -16,7 +16,14 @@
     src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2104@1.0/SEBANG_Gothic_Bold.woff') format('woff');
     font-weight: normal;
     font-style: normal;
-}*{
+}
+@font-face {
+    font-family: 'SUIT-Medium';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_suit@1.0/SUIT-Medium.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+*{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -98,8 +105,11 @@ img{
         }
     }
     .info{
+        position: relative;
+        top: -10%;
         height: 600px;
-        font-family: 'HallymGothic-Regular';
+        font-family: 'SUIT-Medium';
+        margin: 0 30px;
         .infoTitle{
             display: flex;
             align-items: flex-end;
@@ -167,12 +177,28 @@ img{
     }
 }
 #P2cover{
-    justify-content: space-around;
+    justify-content: center;
     background: #fff;
 }
 #P3cover{
-    justify-content: space-around;
+    justify-content: center;
     background: rgb(246,248,250);
+}
+#P4cover{
+    justify-content: center;
+    background: #fff;
+}
+#P5cover{
+    justify-content: center;
+    background: rgb(246,248,250);
+}
+#P6cover{
+    justify-content: center;
+    background: #fff;
+}
+.textBold{
+    font-size: 20px;
+    padding-left: 20px;
 }
 @media screen and (max-width:750px){
     .Page{
